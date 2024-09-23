@@ -1,8 +1,10 @@
 import { useRoutes } from "react-router-dom";
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 
 import AdminLogin from "../pages/AdminLogin";
 import AdminLayout from "../layouts/AdminLayout";
+
+const CustomersList = lazy(() => import("../pages/CustomersList"));
 
 export default function Routes() {
   const router = useRoutes([
@@ -21,6 +23,12 @@ export default function Routes() {
         </Suspense>
       ),
       path: "/admin",
+      children: [
+        {
+          element: <CustomersList />,
+          path: "/admin/customers/list",
+        },
+      ],
     },
   ]);
 

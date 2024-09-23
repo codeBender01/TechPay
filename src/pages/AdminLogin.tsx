@@ -22,7 +22,7 @@ const AdminLogin: FC = () => {
         }}
         className="w-[60%] h-[100%] bg-mainBlack flex justify-center flex-col pl-16"
       >
-        <h1 className="text-[33px] text-white font-secondary font-bold">
+        <h1 className="text-lg text-white font-secondary font-bold">
           TechPay Admin
         </h1>
         <p className="text-textGray font-main font-normal text-normal mt-[10px]">

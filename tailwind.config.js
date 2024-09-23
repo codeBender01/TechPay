@@ -12,12 +12,14 @@ export default {
         white: "#fff",
         purple: "#6366F1",
         activeTabGray: "#252E3E",
+        bgGray: "#E5E7EB",
       },
       fontFamily: {
         main: "Inter",
-        secondary: "Jakarta",
+        secondary: "Manrope",
       },
       fontSize: {
+        lg: "34px",
         normal: "16px",
         sm: "14px",
         sm2: "12px",
@@ -25,6 +27,7 @@ export default {
       borderRadius: {
         round: "50%",
         md: "8px",
+        lg: "12px",
       },
     },
   },

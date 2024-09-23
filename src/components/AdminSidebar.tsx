@@ -121,6 +121,7 @@ const AdminSidebar: FC = () => {
           {dropdownTabs.map((d) => {
             return (
               <DropdownTab
+                key={d.path}
                 tabName={d.title}
                 subPaths={d.subPaths}
                 icon={d.icon}
