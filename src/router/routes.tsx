@@ -5,6 +5,9 @@ import AdminLogin from "../pages/AdminLogin";
 import AdminLayout from "../layouts/AdminLayout";
 
 const CustomersList = lazy(() => import("../pages/CustomersList"));
+const UserInfo = lazy(() => import("../pages/UserInfo"));
+const StoresList = lazy(() => import("../pages/StoresList"));
+const StoresEdit = lazy(() => import("../pages/StoresEdit"));
 
 export default function Routes() {
   const router = useRoutes([
@@ -27,6 +30,18 @@ export default function Routes() {
         {
           element: <CustomersList />,
           path: "/admin/customers/list",
+        },
+        {
+          element: <UserInfo />,
+          path: "/admin/customers/edit",
+        },
+        {
+          element: <StoresList />,
+          path: "/admin/stores/list",
+        },
+        {
+          element: <StoresEdit />,
+          path: "/admin/stores/edit",
         },
       ],
     },

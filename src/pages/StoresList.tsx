@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ListHeader from "../components/ListHeader";
 import { Tabs, TabsProps, Table, TableProps, Input, Select } from "antd";
 
-import { users } from "../pageData/data";
+import { stores } from "../pageData/data";
 
 import { LuPencil } from "react-icons/lu";
 import { MdOutlineArrowForward } from "react-icons/md";
@@ -28,7 +28,7 @@ const options = [
   },
 ];
 
-const CustomersList: FC = () => {
+const StoresList: FC = () => {
   const navigate = useNavigate();
 
   const columns: TableProps["columns"] = [
@@ -54,15 +54,15 @@ const CustomersList: FC = () => {
       render: (val) => <div className={rowValueClassname}>{val}</div>,
     },
     {
-      title: <div className={columnTitleClassname}>ЗАказов</div>,
-      dataIndex: "orders",
-      key: "orders",
+      title: <div className={columnTitleClassname}>Категорий</div>,
+      dataIndex: "categories",
+      key: "categories",
       render: (val) => <div className={rowValueClassname}>{val}</div>,
     },
     {
-      title: <div className={columnTitleClassname}>Потрачено</div>,
-      dataIndex: "spent",
-      key: "spent",
+      title: <div className={columnTitleClassname}>Всего товаров</div>,
+      dataIndex: "totalProducts",
+      key: "totalProducts",
       render: (val) => <div className={rowValueClassname}>{val}</div>,
     },
     {
@@ -78,7 +78,7 @@ const CustomersList: FC = () => {
               <MdOutlineArrowForward
                 size={22}
                 onClick={() => {
-                  navigate(`/admin/customers/edit`);
+                  navigate(`/admin/stores/edit`);
                 }}
               />
             </div>
@@ -109,7 +109,7 @@ const CustomersList: FC = () => {
           </div>
           <Table
             columns={columns}
-            dataSource={users}
+            dataSource={stores}
             rowSelection={{ type: "checkbox" }}
             pagination={{
               pageSize: 5,
@@ -121,7 +121,7 @@ const CustomersList: FC = () => {
   ];
   return (
     <div className="flex flex-col px-[64px] pt-[80px] pb-4">
-      <ListHeader title="Клиенты" />
+      <ListHeader title="Магазины" />
       <div
         className="mt-[40px] px-4 py-2 rounded-[20px] "
         style={{
@@ -134,4 +134,4 @@ const CustomersList: FC = () => {
   );
 };
 
-export default CustomersList;
+export default StoresList;

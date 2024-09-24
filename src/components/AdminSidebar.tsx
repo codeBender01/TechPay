@@ -1,11 +1,12 @@
 import { FC } from "react";
 
 import { HiOutlineChartBarSquare } from "react-icons/hi2";
-import { FaChartLine } from "react-icons/fa6";
+import { FaChartLine, FaStore } from "react-icons/fa6";
 import { MdPeopleAlt } from "react-icons/md";
 import { RiShoppingBag2Line } from "react-icons/ri";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { FaRegCheckSquare } from "react-icons/fa";
+import {} from "react-icons/fa6";
 
 import DropdownTab from "./DropdownTab";
 
@@ -31,6 +32,23 @@ const dropdownTabs = [
         id: 3,
         title: "Edit",
         path: "/admin/customers/edit",
+      },
+    ],
+  },
+  {
+    title: "Stores",
+    icon: <FaStore />,
+    path: "/admin/stores",
+    subPaths: [
+      {
+        id: 1,
+        title: "List",
+        path: "/admin/stores/list",
+      },
+      {
+        id: 3,
+        title: "Edit",
+        path: "/admin/stores/edit",
       },
     ],
   },

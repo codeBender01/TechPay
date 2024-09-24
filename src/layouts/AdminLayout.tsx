@@ -8,7 +8,9 @@ const AdminLayout: FC = () => {
   return (
     <div className="flex w-[100%]">
       <AdminSidebar />
-      <Outlet />
+      <div className="max-h-[100vh] overflow-y-auto flex-1">
+        <Outlet />
+      </div>
     </div>
   );
 };

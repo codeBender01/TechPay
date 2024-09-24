@@ -19,3 +19,7 @@ th.ant-table-cell {
 th.ant-table-cell::before {
   display: none;
 }
+
+.ant-col.ant-form-item-label.css-dev-only-do-not-override-qnu6hi {
+  padding: 0 !important;
+}

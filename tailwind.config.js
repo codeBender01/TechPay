@@ -13,6 +13,8 @@ export default {
         purple: "#6366F1",
         activeTabGray: "#252E3E",
         bgGray: "#E5E7EB",
+        secBlackOp: "#1119271F",
+        deleteRed: "#C8102E",
       },
       fontFamily: {
         main: "Inter",
@@ -28,6 +30,7 @@ export default {
         round: "50%",
         md: "8px",
         lg: "12px",
+        pill: "16px",
       },
     },
   },
