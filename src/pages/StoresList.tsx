@@ -33,7 +33,7 @@ const StoresList: FC = () => {
 
   const columns: TableProps["columns"] = [
     {
-      title: <div className={columnTitleClassname}>Фио</div>,
+      title: <div className={columnTitleClassname}>Название</div>,
       dataIndex: "name",
       key: "name",
       render: (val) => {

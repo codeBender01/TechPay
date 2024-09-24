@@ -1,3 +1,5 @@
+import drill from "../assets/drill.jpg";
+
 export const users = [
   {
     name: "Amanow Aman",
@@ -71,5 +73,48 @@ export const stores = [
     categories: 3,
     totalProducts: 783,
     key: 5,
+  },
+];
+
+export const products = [
+  {
+    name: "Дрель желтая",
+    img: drill,
+    quantity: "45",
+    price: "100 тмт",
+    sku: "401_1BBXBK",
+    isPublished: true,
+  },
+  {
+    name: "Дрель желтая",
+    img: drill,
+    quantity: "45",
+    price: "100 тмт",
+    sku: "401_1BBXBK",
+    isPublished: true,
+  },
+  {
+    name: "Дрель желтая",
+    img: drill,
+    quantity: "45",
+    price: "100 тмт",
+    sku: "401_1BBXBK",
+    isPublished: true,
+  },
+  {
+    name: "Дрель желтая",
+    img: drill,
+    quantity: "45",
+    price: "100 тмт",
+    sku: "401_1BBXBK",
+    isPublished: true,
+  },
+  {
+    name: "Дрель желтая",
+    img: drill,
+    quantity: "45",
+    price: "100 тмт",
+    sku: "401_1BBXBK",
+    isPublished: true,
   },
 ];

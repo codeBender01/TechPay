@@ -15,6 +15,9 @@ export default {
         bgGray: "#E5E7EB",
         secBlackOp: "#1119271F",
         deleteRed: "#C8102E",
+        green: "#0B815A",
+        lightGreen: "#E2F7F0",
+        paleGray: "#FAFBFB",
       },
       fontFamily: {
         main: "Inter",

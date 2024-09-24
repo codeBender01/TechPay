@@ -65,7 +65,7 @@ const dropdownTabs = [
       {
         id: 2,
         title: "Create",
-        path: "/admin/products/create",
+        path: "/admin/products/add",
       },
     ],
   },
